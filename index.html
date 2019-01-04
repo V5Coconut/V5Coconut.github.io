@@ -64,6 +64,67 @@
       <div class="outer">
         <section id="main">
   
+    <article id="[layout]-阻塞队列" class="article article-type-[layout]" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/04/阻塞队列/" class="article-date">
+  <time datetime="2019-01-04T03:00:45.000Z" itemprop="datePublished">2019-01-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/01/04/阻塞队列/">阻塞队列&#39;</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="阻塞队列"><a href="#阻塞队列" class="headerlink" title="阻塞队列"></a>阻塞队列</h1><ul>
+<li>BlockingQueue是一个接口，常用的子类：ArrayBlockingQueue LinkedBlockingQueue</li>
+<li>ArrayBlockingQueue底层的内部实现是数组结构，而且是有界的。</li>
+<li>LinkedBlockingQueue底层的内部实现是链表，增删快。<br>而且在创建时，不需要指定队列的上限，默认大小Integer.MaxValue<blockquote>
+<p>注:生产和消费方法都是一致的。</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="添加队列中元素的方法"><a href="#添加队列中元素的方法" class="headerlink" title="添加队列中元素的方法"></a>添加队列中元素的方法</h1><ul>
+<li>add方法：当队列已满时，调用此方法会抛出queuefull异常。</li>
+<li><strong>offer方法：当队列已满时，抛出false。反之为true</strong></li>
+<li>put方法：当队列已满时，此方法会产生阻塞。重点记忆</li>
+<li>offer超时超时：会产生阻塞，当指定的超时时间到达，阻塞放开。<blockquote>
+<p>补充：put和offer超时，阻塞放开的条件是队列未满.</p>
+</blockquote>
+</li>
+</ul>
+<p>#移除队列中元素的方法</p>
+<ul>
+<li>remove方法：当队列空时，会抛noSuchElement的异常</li>
+<li><strong>poll方法：当队列空时，会抛出null的特定值。</strong></li>
+<li>如果队列不为空，则按FIFO（先进先出）的原则将数据取出</li>
+<li>take方法：当队列空时，会产生阻塞。当队列有数据可消费时，阻塞放开</li>
+<li>poll超时：当队列空时，会产生阻塞，直到超时时间到达或有数据可以消费，阻塞放开</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/04/阻塞队列/" data-id="cjqhh37460005bounmk1i3vtf" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-2018-12-31-Node中PM2的使用记录" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/12/31/2018-12-31-Node中PM2的使用记录/" class="article-date">
@@ -90,7 +151,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/31/2018-12-31-Node中PM2的使用记录/" data-id="cjqc94gdn0003owun75w21mqh" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/12/31/2018-12-31-Node中PM2的使用记录/" data-id="cjqhh373z0002boun7rtdnod9" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/NODE/">NODE</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PM2/">PM2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/总结/">总结</a></li></ul>
@@ -128,7 +189,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/09/easyui记录/" data-id="cjqc94gdm0002owun1i17q0b8" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/11/09/easyui记录/" data-id="cjqhh373x0001bounb2waftpb" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/easyUI/">easyUI</a></li></ul>
@@ -166,7 +227,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/29/2018-10-29-第一次写Blog-md/" data-id="cjqc94gdf0000owundadw8ncv" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/29/2018-10-29-第一次写Blog-md/" data-id="cjqhh373s0000bounfbktrevp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -211,7 +272,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/10/29/hello-world/" data-id="cjqc94gdk0001owuntew0h1kb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/29/hello-world/" data-id="cjqhh37440004boun1r2m0o5i" class="article-share-link">Share</a>
       
       
     </footer>
@@ -253,7 +314,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">十二月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">十月 2018</a></li></ul>
     </div>
   </div>
 
@@ -264,6 +325,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/01/04/阻塞队列/">阻塞队列&#39;</a>
+          </li>
         
           <li>
             <a href="/2018/12/31/2018-12-31-Node中PM2的使用记录/">Node中PM2的使用记录</a>
@@ -293,7 +358,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2018 liu<br>
+      &copy; 2019 liu<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
